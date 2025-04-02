@@ -5,7 +5,7 @@ import "./Cart.css"; // Importing the CSS file
 import { emptyCart } from "../redux/action";
 
 const Cart = () => {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const cartData = useSelector((state) => state.cartData);
   let amount =
     cartData.length &&
