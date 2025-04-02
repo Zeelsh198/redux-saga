@@ -1,0 +1,107 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f8f9fa;
+  }
+  
+  /* Buttons Styling */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+    margin: 10px 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Buttons Container */
+  .all-btns {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Product List Container */
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+  }
+  
+  /* Product Card */
+  .product-item {
+    
+    width: 380px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+  text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Product Image */
+  .product-item img {
+    width: 100%;
+    height: 200px; /* Fixed height */
+    object-fit: contain; /* Ensures full image fits without cropping */
+    border-radius: 8px;
+    
+    padding: 10px; /* Keeps image visually centered */
+  }
+  
+  /* Product Details */
+  .product-item div {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  /* Cart Buttons */
+  .product-item button {
+    background-color: #28a745;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  
+  .product-item button:last-child {
+    background-color: #dc3545;
+  }
+  
+  .product-item button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .product-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-item {
+      width: 90%;
+    }
+  }
+  
